@@ -20,23 +20,18 @@ docker run -d --restart=always -v /etc/Moe-counter/count.db:/usr/local/src/Moe-c
 注意：映射数据文件后，需要先上传或者创建/etc/Moe-counter路径下的count.db文件，否则将启动失败
 
 ## default info
-
 ### docker pull docker.io
-
 ```shell
 docker pull skyle1995/moe-counter-docker:latest
 ```
-
 ### docker pull aliyuncs.com
 ```shell
 docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker:latest
 ```
-
 ### default port
 ```text
 3000
 ```
-
 ### variable
 ```ini
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin

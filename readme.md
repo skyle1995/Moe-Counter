@@ -2,7 +2,7 @@
 
 多种风格可选的萌萌计数器
 
-本仓库仅作为推送Docker使用
+本仓库仅作为构建Docker镜像使用
 
 ## Demo
 [https://count.getloli.com](https://count.getloli.com)

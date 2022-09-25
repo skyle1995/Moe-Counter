@@ -32,7 +32,7 @@ NODE_VERSION=16.17.0
 YARN_VERSION=1.22.19
 NPM_MIRROR=https://registry.npmmirror.com
 ```
-陪住docker容器环境变量
+配置docker容器环境变量
 
 ### port
 ```text

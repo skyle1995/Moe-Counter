@@ -4,7 +4,7 @@
 
 本仓库仅作为构建Docker镜像使用
 
-原始版本：[https://github.com/journey-ad/Moe-counter](https://github.com/journey-ad/Moe-counter)
+源项目：[https://github.com/journey-ad/Moe-counter](https://github.com/journey-ad/Moe-counter)
 
 ## Demo
 [https://count.getloli.com](https://count.getloli.com)

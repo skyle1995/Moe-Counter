@@ -17,6 +17,8 @@ docker run -d --restart=always -v /etc/Moe-counter/count.db:/usr/local/src/Moe-c
 ```
 一键拉取安装docker镜像
 
+注意：映射数据文件后，需要先上传或者创建/etc/Moe-counter路径下的count.db文件，否则将启动失败
+
 ## 以下为手动安装信息
 
 ### docker pull docker.io

@@ -14,8 +14,9 @@
 ### docker pull
 
 ```shell
-$ docker pull skyle1995/moe-counter-docker:latest
+docker pull skyle1995/moe-counter-docker:latest
 ```
+下载镜像包到本地docker
 
 ### variable
 ```ini

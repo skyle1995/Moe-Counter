@@ -17,8 +17,14 @@ $ docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker:lat
 
 ### port
 ```ini
-3000:port
+3000:you port
 ```
+
+### mongoDB
+```ini
+/etc/Moe-counter/count.db:/usr/local/src/Moe-counter/count.db
+```
+
 
 ### variable
 ```ini

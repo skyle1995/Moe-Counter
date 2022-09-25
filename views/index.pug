@@ -26,16 +26,16 @@ html
     h3 如何使用:
     p 将下方带有 <code>:name</code> 的标签替换成你的专属标签
     h5 SVG 地址
-    code https://count.i80k.com/get/@:name
+    code 当前访问域名/get/@:name
 
     h5 Img 标签
-    code &lt;img src="https://count.i80k.com/get/@:name" alt=":name" />
+    code &lt;img src="当前访问域名/get/@:name" alt=":name" />
 
     h5 Markdown
-    code ![:name](https://count.i80k.com/get/@:name)
+    code ![:name](当前访问域名/get/@:name)
 
     h3 演示:
-      <img src="https://count.i80k.com/get/@index" alt="Moe Count!" />
+      <img src="/get/@index" alt="Moe Count!" />
 
     i 任何人都可以访问这个数据！
       | <span style="color: #ff4500;">不要</span>
@@ -44,19 +44,19 @@ html
     details
       summary(style='display: inline-block;', onclick='_evt_push("click", "normal", "more_theme")')
         h3(style='display: inline-block; cursor: pointer;') 更多主题
-      p(style='margin: 0;') 只需使用查询参数 <code>theme</code> 像这样: <code>https://count.i80k.com/get/@:name?theme=moebooru</code>
+      p(style='margin: 0;') 只需使用查询参数 <code>theme</code> 像这样: <code>https://118309m4c8.oicp.vip:8103/get/@:name?theme=moebooru</code>
       h5 asoul
-      img(src='https://count.i80k.com/get/@demo?theme=asoul', alt='A-SOUL')
+      img(src='/get/@demo?theme=asoul', alt='A-SOUL')
       h5 moebooru
-      img(src='https://count.i80k.com/get/@demo?theme=moebooru', alt='Moebooru')
+      img(src='/get/@demo?theme=moebooru', alt='Moebooru')
       h5 moebooru-h
-      img(src='https://count.i80k.com/get/@demo?theme=moebooru-h', alt='Moebooru-Hentai')
+      img(src='/get/@demo?theme=moebooru-h', alt='Moebooru-Hentai')
       h5 rule34
-      img(src='https://count.i80k.com/get/@demo?theme=rule34', alt='Rule34')
+      img(src='/get/@demo?theme=rule34', alt='Rule34')
       h5 gelbooru
-      img(src='https://count.i80k.com/get/@demo?theme=gelbooru', alt='Gelbooru')
+      img(src='/get/@demo?theme=gelbooru', alt='Gelbooru')
       h5 gelbooru-h
-      img(src='https://count.i80k.com/get/@demo?theme=gelbooru-h', alt='Gelbooru-Hentai')
+      img(src='/get/@demo?theme=gelbooru-h', alt='Gelbooru-Hentai')
 
     //- h3 Credits
     //- ul
@@ -77,7 +77,7 @@ html
 
     h3 测试工具
     .tool
-      code https://count.i80k.com/get/@
+      code 当前访问域名/get/@
       input#name(type='text', placeholder=':name', style='display: inline-block; width: 80px; height: 1.4em; line-height: 1.4em; margin: 0 4px; vertical-align: middle;')
       code ?theme=
       select#theme(style='display: inline-block; height: 1.6em; line-height: 1.6em; font-size: 14px; margin: 0 4px; padding: 0 4px; vertical-align: middle;')
@@ -104,7 +104,7 @@ html
             return
           }
 
-          img.src = 'https://count.i80k.com/get/@' + text + '?theme=' + theme
+          img.src = '/get/@' + text + '?theme=' + theme
         })
 
     //- iframe(src="https://chat.getloli.com/room/@Moe-counter?title=%E8%90%8C%E8%90%8C%E8%AE%A1%E6%95%B0%E5%99%A8%E7%9A%84%E7%95%99%E8%A8%80%E6%9D%BF", scrolling="no", frameborder="0", height="70%", width="26%", style="position: fixed;top: 2%;right: 5%;")

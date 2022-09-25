@@ -15,6 +15,11 @@
 $ docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker:latest
 ```
 
+### port
+```ini
+3000:port
+```
+
 ### variable
 ```ini
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin

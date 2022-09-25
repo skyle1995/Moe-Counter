@@ -6,6 +6,8 @@
 
 源项目：[https://github.com/journey-ad/Moe-counter](https://github.com/journey-ad/Moe-counter)
 
+![Moe-counter](https://count.getloli.com/get/@Moe-counter.github)
+
 ## Demo
 [https://count.getloli.com](https://count.getloli.com)
 

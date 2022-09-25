@@ -14,7 +14,7 @@
 ### docker pull
 
 ```shell
-$ docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker:latest
+$ docker pull skyle1995/moe-counter-docker:latest
 ```
 
 ### variable

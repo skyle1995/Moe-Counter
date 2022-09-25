@@ -19,7 +19,7 @@ docker run -d --restart=always -v /etc/Moe-counter/count.db:/usr/local/src/Moe-c
 
 注意：映射数据文件后，需要先上传或者创建/etc/Moe-counter路径下的count.db文件，否则将启动失败
 
-## 以下为手动安装信息
+## default info
 
 ### docker pull docker.io
 
@@ -33,7 +33,10 @@ docker pull skyle1995/moe-counter-docker:latest
 docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker::latest
 ```
 
-下载镜像包到本地docker
+### default port
+```text
+3000
+```
 
 ### variable
 ```ini
@@ -42,16 +45,8 @@ NODE_VERSION=16.17.0
 YARN_VERSION=1.22.19
 NPM_MIRROR=https://registry.npmmirror.com
 ```
-配置docker容器环境变量
-
-### port
-```text
-3000:8081
-```
-将容器端口3000映射到公网8081端口
 
 ### mongoDB
 ```text
-/etc/Moe-counter/count.db:/usr/local/src/Moe-counter/count.db
+/usr/local/src/Moe-counter/count.db
 ```
-将本机数据文件映射到容器

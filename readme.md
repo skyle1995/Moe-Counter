@@ -11,13 +11,12 @@
 
 ## Usage
 
-### auto install
+### install
 ```shell
+mkdir -p /etc/Moe-counter
+touch /etc/Moe-counter/count.db
 docker run -d --restart=always -v /etc/Moe-counter/count.db:/usr/local/src/Moe-counter/count.db -p 3000:3000 --name="moe" skyle1995/moe-counter-docker:latest
 ```
-一键拉取安装docker镜像
-
-注意：映射数据文件后，需要先上传或者创建/etc/Moe-counter路径下的count.db文件，否则将启动失败
 
 ## default info
 ### docker pull docker.io

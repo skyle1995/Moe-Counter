@@ -1,4 +1,4 @@
-# Moe-counter
+# Moe-counter-docker 汉化
 
 多种风格可选的萌萌计数器
 

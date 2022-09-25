@@ -61,6 +61,3 @@ DB_URL="mongodb+srv://account:passwd@***.***.***.mongodb.net/db_count"
 *   gelbooru.com NSFW
 *   [Icons8](https://icons8.com/icons/set/star)
 
-## License
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjourney-ad%2FMoe-counter.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjourney-ad%2FMoe-counter?ref=badge_large)

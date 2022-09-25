@@ -11,11 +11,18 @@
 
 ## Usage
 
-### docker pull
+### docker pull docker.io
 
 ```shell
 docker pull skyle1995/moe-counter-docker:latest
 ```
+
+### docker pull aliyuncs.com
+
+```shell
+docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker::latest
+```
+
 下载镜像包到本地docker
 
 ### variable

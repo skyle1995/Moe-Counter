@@ -20,8 +20,8 @@ $ docker pull skyle1995/moe-counter-docker:latest
 ### variable
 ```ini
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-NODE_VERSION=16.13.1
-YARN_VERSION=1.22.15
+NODE_VERSION=16.17.0
+YARN_VERSION=1.22.19
 NPM_MIRROR=https://registry.npmmirror.com
 ```
 陪住docker容器环境变量

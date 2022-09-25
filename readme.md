@@ -30,7 +30,7 @@ docker pull skyle1995/moe-counter-docker:latest
 ### docker pull aliyuncs.com
 
 ```shell
-docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker::latest
+docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker:latest
 ```
 
 ### default port

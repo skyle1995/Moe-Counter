@@ -36,4 +36,4 @@ NPM_MIRROR=https://registry.npmmirror.com
 ```text
 /etc/Moe-counter/count.db:/usr/local/src/Moe-counter/count.db
 ```
-映射数据文件路径到容器
+将本机数据文件映射到容器

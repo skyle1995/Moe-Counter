@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 
 LABEL version = "1.0" 
-LABEL author = "KoalaRong"
+LABEL author = "skyle1995"
 
 ENV NPM_MIRROR="https://registry.npmmirror.com"
 

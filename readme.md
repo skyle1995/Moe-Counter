@@ -9,55 +9,16 @@
 
 ## Usage
 
-### Install
-
-#### Run on Repl.it
-
-- Open the url [https://repl.it/@journeyad/Moe-counter](https://repl.it/@journeyad/Moe-counter)
-- Just hit the **Fork** button
-- And hit the **Run** button
-
-#### Deploying on your own server
+### docker pull
 
 ```shell
-$ git clone https://github.com/journey-ad/Moe-counter.git
-$ cd Moe-counter
-$ yarn install
-
-$ yarn start
+$ docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker:latest
 ```
 
-### Confignation
-
-`config.yml`
-
-```yaml
-app:
-  port: 3000
-
-db:
-  type: mongodb # sqlite or mongodb
+### variable
+```ini
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+NODE_VERSION=16.13.1
+YARN_VERSION=1.22.15
+NPM_MIRROR=https://registry.npmmirror.com
 ```
-
-If you use mongodb, you need to specify the environment variable `DB_URL`
-
-```shell
-# eg:
-export DB_URL=mongodb+srv://account:passwd@***.***.***.mongodb.net/db_count
-```
-
-repl.it can use `.env` file, [documentation](https://docs.repl.it/repls/secret-keys)
-
-```
-DB_URL="mongodb+srv://account:passwd@***.***.***.mongodb.net/db_count"
-```
-
-## Credits
-
-*   [repl.it](https://repl.it/)
-*   [A-SOUL](https://www.asoulworld.com/) <sup>(非官方导航站)</sup>
-*   [moebooru](https://github.com/moebooru/moebooru)
-*   rule34.xxx NSFW
-*   gelbooru.com NSFW
-*   [Icons8](https://icons8.com/icons/set/star)
-

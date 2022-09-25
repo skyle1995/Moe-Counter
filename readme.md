@@ -45,8 +45,3 @@ NODE_VERSION=16.17.0
 YARN_VERSION=1.22.19
 NPM_MIRROR=https://registry.npmmirror.com
 ```
-
-### data file
-```text
-/usr/local/src/Moe-counter/count.db
-```

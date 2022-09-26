@@ -33,10 +33,3 @@ docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker:lates
 ```ini
 3000
 ```
-### variable
-```ini
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-NODE_VERSION=16.17.0
-YARN_VERSION=1.22.19
-NPM_MIRROR=https://registry.npmmirror.com
-```

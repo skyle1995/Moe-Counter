@@ -21,4 +21,3 @@ COPY config.prd.yml /usr/local/src/Moe-counter/config.yml
 EXPOSE 3000
 
 CMD [ "yarn","start" ]
-

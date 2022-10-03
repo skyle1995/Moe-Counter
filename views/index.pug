@@ -22,27 +22,34 @@ html
 
   body
     h3 如何使用:
-    p 将下方带有 <code>:name</code> 的标签替换成你的专属标签
-    h5 SVG 地址
-    code 当前访问域名/get/@:name
-
-    h5 Img 标签
-    code &lt;img src="当前访问域名/get/@:name" alt=":name" />
-
-    h5 Markdown
-    code ![:name](当前访问域名/get/@:name)
-
-    h3 演示:
-      <img src="/get/@index" alt="Moe Count!" />
+    p 将下方内容中的 <code>:name</code> 标签替换成你的专属标签
+    p 将下方地址 <code>https://www.example.com</code> 替换成当前域名
 
     i 任何人都可以访问这个数据！
       | <span style="color: #ff4500;">不要</span>
       | 输入个人信息！！！
 
+    h5 SVG 地址
+    code https://www.example.com/get/@:name
+
+    h5 Img 标签
+    code &lt;img src="https://www.example.com/get/@:name" alt=":name" />
+
+    h5 Markdown
+    code ![:name](https://www.example.com/get/@:name)
+
+    h3 演示:
+      <img src="/get/@index" alt="Moe Count!" />
+
+    i 使用专属标签可以 
+      | <span style="color: #ff4500;">重置</span>
+      | 计数信息！！！
+
     details
       summary(style='display: inline-block;', onclick='_evt_push("click", "normal", "more_theme")')
         h3(style='display: inline-block; cursor: pointer;') 更多主题
-      p(style='margin: 0;') 只需使用查询参数 <code>theme</code> 像这样: <code>http://www.example.com/get/@:name?theme=moebooru</code>
+      p 只需使用查询参数 <code>theme</code>
+      p 像这样: <code>https://www.example.com/get/@:name?theme=moebooru</code>
       h5 asoul
       img(src='/get/@demo?theme=asoul', alt='A-SOUL')
       h5 moebooru
@@ -72,10 +79,13 @@ html
         |  NSFW
       li
         a(href='https://icons8.com/icons/set/star', target='_blank', rel='nofollow') Icons8
+      li
+        a(href='https://github.com/skyle1995/Moe-counter-docker', target='_blank', rel='nofollow') skyle1995
+        | （汉化）
 
     h3 测试工具
     .tool
-      code 当前访问域名/get/@
+      code https://www.example.com/get/@
       input#name(type='text', placeholder=':name', style='display: inline-block; width: 80px; height: 1.4em; line-height: 1.4em; margin: 0 4px; vertical-align: middle;')
       code ?theme=
       select#theme(style='display: inline-block; height: 1.6em; line-height: 1.6em; font-size: 14px; margin: 0 4px; padding: 0 4px; vertical-align: middle;')
@@ -106,4 +116,4 @@ html
         })
     
     p.copy
-      a(href='https://github.com/skyle1995/Moe-counter-docker', target='_blank', onclick='_evt_push("click", "normal", "go_github")') 开源代码
+      a(href='https://github.com/journey-ad/Moe-counter', target='_blank', onclick='_evt_push("click", "normal", "go_github")') 获取源码

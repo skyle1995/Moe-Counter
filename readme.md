@@ -19,8 +19,14 @@ mkdir -p /etc/Moe-counter
 touch /etc/Moe-counter/count.db
 docker run -d --restart=always -v /etc/Moe-counter/count.db:/usr/local/src/Moe-counter/count.db -p 3000:3000 --name="moe" skyle1995/moe-counter-docker:latest
 ```
+### default config.yml
+```ini
+app:
+  port: 3000
 
-## default info
+db:
+  type: mongodb # sqlite or mongodb
+```
 ### docker pull docker.io
 ```shell
 docker pull skyle1995/moe-counter-docker:latest
@@ -32,12 +38,4 @@ docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker:lates
 ### docker pull tencentyun.com
 ```shell
 docker pull ccr.ccs.tencentyun.com/skyle1995/moe-counter-docker:latest
-```
-### default config.yml
-```ini
-app:
-  port: 3000
-
-db:
-  type: mongodb # sqlite or mongodb
 ```

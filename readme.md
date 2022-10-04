@@ -29,7 +29,15 @@ docker pull skyle1995/moe-counter-docker:latest
 ```shell
 docker pull registry.cn-hangzhou.aliyuncs.com/skyle1995/moe-counter-docker:latest
 ```
-### default port
+### docker pull tencentyun.com
+```shell
+docker pull ccr.ccs.tencentyun.com/skyle1995/moe-counter-docker:latest
+```
+### default config.yml
 ```ini
-3000
+app:
+  port: 3000
+
+db:
+  type: mongodb # sqlite or mongodb
 ```

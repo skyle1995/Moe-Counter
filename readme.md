@@ -22,7 +22,7 @@ docker run -d --restart=always -v /etc/Moe-counter/count.db:/usr/local/src/Moe-c
 ### Compose
 ```ini
  moe-counter:
-    image: koalarong/moe-counter:latest
+    image: skyle1995/moe-counter-docker:latest
     ports:
       - "3000:3000"
     restart: always

@@ -13,7 +13,7 @@
 
 ## Usage
 
-### install
+### Shell
 ```shell
 mkdir -p /etc/Moe-counter
 touch /etc/Moe-counter/count.db

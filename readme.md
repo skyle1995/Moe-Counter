@@ -19,6 +19,21 @@ mkdir -p /etc/Moe-counter
 touch /etc/Moe-counter/count.db
 docker run -d --restart=always -v /etc/Moe-counter/count.db:/usr/local/src/Moe-counter/count.db -p 3000:3000 --name="moe" skyle1995/moe-counter-docker:latest
 ```
+### Compose
+```ini
+ moe-counter:
+    image: koalarong/moe-counter:latest
+    ports:
+      - "3000:3000"
+    restart: always
+    container_name: moe
+    networks:
+      - webapp
+    volumes:
+      - ../data/moe-counter/count.db:/usr/local/src/Moe-counter/count.db
+#使用sqlite请将count.db文件放置于宿主机，挂载于容器中，以防止容器重建时丢失数据
+```
+
 ### default config.yml
 ```ini
 app:

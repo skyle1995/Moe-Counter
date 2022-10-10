@@ -21,16 +21,16 @@ docker run -d --restart=always -v /etc/Moe-counter/count.db:/usr/local/src/Moe-c
 ```
 ### Compose
 ```ini
- moe-counter:
+ moe-counter-docker:
     image: skyle1995/moe-counter-docker:latest
     ports:
       - "3000:3000"
     restart: always
-    container_name: moe
+    container_name: moe-counter-docker
     networks:
       - webapp
     volumes:
-      - ../data/moe-counter/count.db:/usr/local/src/Moe-counter/count.db
+      - /etc/Moe-counter/count.db:/usr/local/src/Moe-counter/count.db
 #使用sqlite请将count.db文件放置于宿主机，挂载于容器中，以防止容器重建时丢失数据
 ```
 

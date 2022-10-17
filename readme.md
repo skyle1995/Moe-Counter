@@ -13,12 +13,12 @@
 
 ## Usage
 
-### Shell Initialize
+### Shell touch count.db
 ```shell
 mkdir -p /etc/Moe-counter
 touch /etc/Moe-counter/count.db
 ```
-### Shell pull
+### Shell pull install
 ```shell
 docker run -d --restart=always -v /etc/Moe-counter/count.db:/usr/local/src/Moe-counter/count.db -p 3000:3000 --name="moe" skyle1995/moe-counter-docker:latest
 ```
